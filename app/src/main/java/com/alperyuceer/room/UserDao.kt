@@ -11,7 +11,7 @@ import io.reactivex.rxjava3.core.Flowable
 @Dao
 interface UserDao {
     @Query("SELECT * FROM User")
-    fun getAll(): Flowable<List<User>>
+    fun getAll(): List<User>
 
      @Insert
      fun insert(user: User): Completable

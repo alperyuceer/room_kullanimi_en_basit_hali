@@ -9,6 +9,5 @@ class User(
     @ColumnInfo("first_name") var firstName:String,
     @ColumnInfo("last_name") var lastName: String
 ){
-    @PrimaryKey(autoGenerate = true)
-    var id:Int = 0
+    @PrimaryKey(autoGenerate = true) var id = 0
 }
